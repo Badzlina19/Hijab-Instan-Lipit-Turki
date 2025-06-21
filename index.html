@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirana.hijab - Hijab Instan Lipit Turki Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #faf6f2;
+            color: #333;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+        }
+        .color-option {
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        .color-option:hover, .color-option.active {
+            transform: scale(1.05);
+            border-color: #8b5a2b;
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .slide-in {
+            animation: slideIn 0.5s ease-out;
+        }
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .btn-gold {
+            background: linear-gradient(135deg, #d4af37 0%, #f1e5ac 50%, #d4af37 100%);
+            color: #5a3e1f;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-gold:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+        }
+        .slider-image {
+            transition: opacity 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://cdn.orderonline.id/uploads/images_7008741739274685938.png" alt="Kirana.hijab Logo" class="h-12">
+                <span class="ml-3 text-xl font-bold text-gray-800">Kirana.hijab</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#product" class="text-gray-700 hover:text-amber-800 transition">Produk</a>
+                <a href="#colors" class="text-gray-700 hover:text-amber-800 transition">Varian</a>
+                <a href="#features" class="text-gray-700 hover:text-amber-800 transition">Keunggulan</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-amber-800 transition">Testimoni</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-4 shadow-lg">
+            <div class="flex flex-col space-y-4">
+                <a href="#product" class="text-gray-700 hover:text-amber-800 transition">Produk</a>
+                <a href="#colors" class="text-gray-700 hover:text-amber-800 transition">Varian</a>
+                <a href="#features" class="text-gray-700 hover:text-amber-800 transition">Keunggulan</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-amber-800 transition">Testimoni</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-12 md:py-20 bg-gradient-to-b from-amber-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 slide-in">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Hijab Instan Lipit Turki <span class="text-amber-700">Premium</span></h1>
+                    <p class="text-lg text-gray-600 mb-8">Praktis & stylish dalam satu langkah. Tinggal pakai, tampil rapi, nyaman sepanjang hari—pas banget untuk aktivitas harian atau ke kampus!</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="https://nora.orderonline.id/hijab-instan-lipit-turki" class="btn-gold px-8 py-3 rounded-full text-center">Pesan Sekarang</a>
+                        <a href="#product" class="px-8 py-3 border border-amber-700 text-amber-700 rounded-full text-center hover:bg-amber-50 transition">Lihat Detail</a>
+                    </div>
+                    <div class="mt-8 flex items-center space-x-4">
+                        <div class="flex -space-x-2">
+                            <img src="https://randomuser.me/api/portraits/women/1.jpg" class="w-10 h-10 rounded-full border-2 border-white" alt="Customer">
+                            <img src="https://randomuser.me/api/portraits/women/2.jpg" class="w-10 h-10 rounded-full border-2 border-white" alt="Customer">
+                            <img src="https://randomuser.me/api/portraits/women/3.jpg" class="w-10 h-10 rounded-full border-2 border-white" alt="Customer">
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-600"><span class="font-semibold">500+</span> wanita sudah membeli</p>
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="text-gray-600 ml-2">4.9/5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 relative">
+                    <div class="glass-card p-4 md:p-6 max-w-md mx-auto">
+                        <div class="relative overflow-hidden rounded-lg">
+                            <img id="main-product-image" src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m2hyi3ok4qgpa7@resize_w450_nl.webp" alt="Hijab Instan Lipit Turki" class="w-full h-auto rounded-lg">
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+                                <p class="text-white font-medium">Hijab Instan Lipit Turki - Hitam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 hidden md:block">
+                        <div class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium">
+                            <i class="fas fa-tag mr-2"></i> Rp 143.000
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Section -->
+    <section id="product" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Detail Produk</h2>
+                <div class="w-20 h-1 bg-amber-600 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-8">
+                <!-- Product Gallery -->
+                <div class="lg:w-1/2">
+                    <div class="glass-card p-4 mb-6">
+                        <div class="relative overflow-hidden rounded-lg h-96">
+                            <img id="current-slide" src="https://cdn.orderonline.id/uploads/images_7008741739274685938.png" alt="Hijab Instan Lipit Turki" class="w-full h-full object-cover slider-image">
+                            <button id="prev-slide" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-white transition">
+                                <i class="fas fa-chevron-left text-gray-700"></i>
+                            </button>
+                            <button id="next-slide" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-white transition">
+                                <i class="fas fa-chevron-right text-gray-700"></i>
+                            </button>
+                        </div>
+                        <div class="flex mt-4 space-x-2 overflow-x-auto py-2">
+                            <img src="https://cdn.orderonline.id/uploads/images_7008741739274685938.png" class="w-16 h-16 object-cover rounded cursor-pointer border border-gray-200 hover:border-amber-400 transition" onclick="changeSlide(0)">
+                            <img src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m2hjuhm1rp0j36@resize_w450_nl.webp" class="w-16 h-16 object-cover rounded cursor-pointer border border-gray-200 hover:border-amber-400 transition" onclick="changeSlide(1)">
+                            <img src="https://down-id.img.susercontent.com/file/id-11134207-7ras9-m2hyi3ok1xbt55@resize_w450_nl.webp" class="w-16 h-16 object-cover rounded cursor-pointer border border-gray-200 hover:border-amber-400 transition" onclick="changeSlide(2)">
+                            <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk5-m9g1z8go7lshf5@resize_w450_nl.webp" class="w-16 h-16 object-cover rounded cursor-pointer border border-gray-200 hover:border-amber-400 transition" onclick="changeSlide(3)">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Info -->
+                <div class="lg:w-1/2">
+                    <div class="glass-card p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Hijab Instan Lipit Turki Premium</h3>
+                        <div class="flex items-center mb-6">
+                            <div class="flex text-amber-400 mr-4">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-600">4.9 (128 ulasan)</span>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <span class="text-3xl font-bold text-amber-700">Rp 143.000</span>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="text-lg font-semibold text-gray-800 mb-2">Spesifikasi:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-amber-600 mt-1 mr-2"></i>
+                                    <span>Bahan: Jersey Premium</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-amber-600 mt-1 mr-2"></i>
+                                    <span>Ukuran: 85x85 cm</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-amber-600 mt-1 mr-2"></i>
+                                    <span>Berat: 300 gram</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-amber-600 mt-1 mr-2"></i>
+                                    <span>Model: Lipit Turki (ada versi dengan tali dalam dan tanpa tali)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <h4 class="text-lg font-semibold text-gray-800 mb-2">Keunggulan:</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
+                                    <span>Praktis tinggal pakai, tidak perlu repit</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
+                                    <span>Bahan adem dan tidak gerah</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
+                                    <span>Lipit rapi yang tidak mudah lepas</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-amber-600 mt-1 mr-2"></i>
+                                    <span>Tersedia dalam berbagai pilihan warna</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <a href="https://nora.orderonline.id/hijab-instan-lipit-turki" class="btn-gold px-8 py-3 rounded-full text-center block">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Color Variants Section -->
+    <section id="colors" class="py-16 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Pilihan Warna</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Tersedia dalam berbagai pilihan warna premium yang elegan dan cocok untuk berbagai kesempatan</p>
+                <div class="w-20 h-1 bg-amber-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                <!-- Color Option 1 -->
+                <div class="color-option rounded-lg overflow-hidden cursor-pointer active" onclick="changeColor('hitam', 'https://down-id.img.susercontent.com/file/id-11134207-7rask-m2hyi3ok4qgpa7@resize_w450_nl.webp')">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m2hyi3ok4qgpa7@resize_w450_nl.webp" alt="Hitam" class="w-full h-40 object-cover">
+                    <div class="bg-white p-3">
+                        <h4 class="font-medium text-center">Hitam</h4>
+                    </div>
+                </div>
+                
+                <!-- Color Option 2 -->
+                <div class="color-option rounded-lg overflow-hidden cursor-pointer" onclick="changeColor('nutella', 'https://down-id.img.susercontent.com/file/id-11134207-7rasg-m2hyjlhj5rp094@resize_w450_nl.webp')">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasg-m2hyjlhj5rp094@resize_w450_nl.webp" alt="Nutella" class="w-full h-40 object-cover">
+                    <div class="bg-white p-3">
+                        <h4 class="font-medium text-center">Nutella</h4>
+                    </div>
+                </div>
+                
+                <!-- Color Option 3 -->
+                <div class="color-option rounded-lg overflow-hidden cursor-pointer" onclick="changeColor('hijau-botol', 'https://down-id.img.susercontent.com/file/id-11134207-7rasg-m3m09ceu092b7c@resize_w450_nl.webp')">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasg-m3m09ceu092b7c@resize_w450_nl.webp" alt="Hijau Botol" class="w-full h-40 object-cover">
+                    <div class="bg-white p-3">
+                        <h4 class="font-medium text-center">Hijau Botol</h4>
+                    </div>
+                </div>
+                
+                <!-- Color Option 4 -->
+                <div class="color-option rounded-lg overflow-hidden cursor-pointer" onclick="changeColor('choco-grey', 'https://down-id.img.susercontent.com/file/id-11134207-7rask-m2hyi3ok651561@resize_w450_nl.webp')">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7rask-m2hyi3ok651561@resize_w450_nl.webp" alt="Choco Grey" class="w-full h-40 object-cover">
+                    <div class="bg-white p-3">
+                        <h4 class="font-medium text-center">Choco Grey</h4>
+                    </div>
+                </div>
+                
+                <!-- Color Option 5 -->
+                <div class="color-option rounded-lg overflow-hidden cursor-pointer" onclick="changeColor('rossy-brown', 'https://down-id.img.susercontent.com/file/id-11134207-7ras9-m2hyi3ok1xbt55@resize_w450_nl.webp')">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7ras9-m2hyi3ok1xbt55@resize_w450_nl.webp" alt="Rossy Brown" class="w-full h-40 object-cover">
+                    <div class="bg-white p-3">
+                        <h4 class="font-medium text-center">Rossy Brown</h4>
+                    </div>
+                </div>
+                
+                <!-- Color Option 6 -->
+                <div class="color-option rounded-lg overflow-hidden cursor-pointer" onclick="changeColor('walnut-expresso', 'https://down-id.img.susercontent.com/file/id-11134207-7rasl-m2hyi3ok7jlldb@resize_w450_nl.webp')">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasl-m2hyi3ok7jlldb@resize_w450_nl.webp" alt="Walnut Expresso" class="w-full h-40 object-cover">
+                    <div class="bg-white p-3">
+                        <h4 class="font-medium text-center">Walnut Expresso</h4>
+                    </div>
+                </div>
+                
+                <!-- Color Option 7 -->
+                <div class="color-option rounded-lg overflow-hidden cursor-pointer" onclick="changeColor('denim', 'https://down-id.img.susercontent.com/file/id-11134207-7rasa-m2hyjlhj4d4kdf@resize_w450_nl.webp')">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasa-m2hyjlhj4d4kdf@resize_w450_nl.webp" alt="Denim" class="w-full h-40 object-cover">
+                    <div class="bg-white p-3">
+                        <h4 class="font-medium text-center">Denim</h4>
+                    </div>
+                </div>
+                
+                <!-- Color Option 8 -->
+                <div class="color-option rounded-lg overflow-hidden cursor-pointer" onclick="changeColor('coksu', 'https://down-id.img.susercontent.com/file/id-11134207-7rash-m2hyjlhj769g7d@resize_w450_nl.webp')">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7rash-m2hyjlhj769g7d@resize_w450_nl.webp" alt="Coksu" class="w-full h-40 object-cover">
+                    <div class="bg-white p-3">
+                        <h4 class="font-medium text-center">Coksu</h4>
+                    </div>
+                </div>
+                
+                <!-- Color Option 9 -->
+                <div class="color-option rounded-lg overflow-hidden cursor-pointer" onclick="changeColor('kuning-lemon', 'https://down-id.img.susercontent.com/file/id-11134207-7rash-m2us3rkw7wkga5@resize_w450_nl.webp')">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7rash-m2us3rkw7wkga5@resize_w450_nl.webp" alt="Kuning Lemon" class="w-full h-40 object-cover">
+                    <div class="bg-white p-3">
+                        <h4 class="font-medium text-center">Kuning Lemon</h4>
+                    </div>
+                </div>
+                
+                <!-- Color Option 10 -->
+                <div class="color-option rounded-lg overflow-hidden cursor-pointer" onclick="changeColor('navy', 'https://down-id.img.susercontent.com/file/id-11134207-7rasj-m2hyi3ok3bw962@resize_w450_nl.webp')">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasj-m2hyi3ok3bw962@resize_w450_nl.webp" alt="Navy" class="w-full h-40 object-cover">
+                    <div class="bg-white p-3">
+                        <h4 class="font-medium text-center">Navy</h4>
+                    </div>
+                </div>
+                
+                <!-- Color Option 11 -->
+                <div class="color-option rounded-lg overflow-hidden cursor-pointer" onclick="changeColor('abu-muda', 'https://down-id.img.susercontent.com/file/id-11134207-7rasm-m3m09ceu1nmr19@resize_w450_nl.webp')">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7rasm-m3m09ceu1nmr19@resize_w450_nl.webp" alt="Abu Muda" class="w-full h-40 object-cover">
+                    <div class="bg-white p-3">
+                        <h4 class="font-medium text-center">Abu Muda</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Keunggulan Produk</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Temukan mengapa hijab instan lipit Turki premium ini menjadi favorit banyak wanita</p>
+                <div class="w-20 h-1 bg-amber-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="glass-card p-6 rounded-lg hover:shadow-lg transition">
+                    <div class="bg-amber-100 w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-bolt text-amber-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Praktis Digunakan</h3>
+                    <p class="text-gray-600">Tinggal pakai tanpa perlu repot merapikan lipitannya. Cocok untuk wanita sibuk yang ingin tampil rapi dalam waktu singkat.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="glass-card p-6 rounded-lg hover:shadow-lg transition">
+                    <div class="bg-amber-100 w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-wind text-amber-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Bahan Nyaman</h3>
+                    <p class="text-gray-600">Terbuat dari jersey premium yang adem, tidak gerah, dan ringan sehingga nyaman dipakai seharian.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="glass-card p-6 rounded-lg hover:shadow-lg transition">
+                    <div class="bg-amber-100 w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-tshirt text-amber-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Lipit Rapi</h3>
+                    <p class="text-gray-600">Lipitan yang presisi dan tidak mudah lepas, memberikan kesan rapi dan elegan setiap saat.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="glass-card p-6 rounded-lg hover:shadow-lg transition">
+                    <div class="bg-amber-100 w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-palette text-amber-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Warna Premium</h3>
+                    <p class="text-gray-600">Pilihan warna-warna premium yang elegan dan tidak mudah pudar meski setelah dicuci berkali-kali.</p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="glass-card p-6 rounded-lg hover:shadow-lg transition">
+                    <div class="bg-amber-100 w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-user-tie text-amber-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Multifungsi</h3>
+                    <p class="text-gray-600">Cocok untuk berbagai kesempatan, mulai dari aktivitas sehari-hari, ke kampus, hingga acara formal.</p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="glass-card p-6 rounded-lg hover:shadow-lg transition">
+                    <div class="bg-amber-100 w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt text-amber-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Kualitas Terjamin</h3>
+                    <p class="text-gray-600">Dibuat dengan standar kualitas tinggi dan bahan pilihan untuk memberikan pengalaman berhijab terbaik.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Apa Kata Mereka?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Testimoni dari pelanggan yang sudah merasakan kualitas hijab instan lipit Turki premium kami</p>
+                <div class="w-20 h-1 bg-amber-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.pinimg.com/564x/3e/3f/1e/3e3f1e1b5e5a5a5a5a5a5a5a5a5a5a5.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Sarah Nurhaliza</h4>
+                            <div class="flex text-amber-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Hijabnya sangat nyaman dipakai seharian. Bahan adem dan lipitannya rapi banget. Sudah beli 3 warna berbeda!"</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.pinimg.com/564x/5e/5e/78/5e5e7878e8e8e8e8e8e8e8e8e8e8e8.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Dian Permata</h4>
+                            <div class="flex text-amber-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Praktis banget buat dipakai kuliah. Tinggal pakai langsung rapi, ga perlu repot merapikan lipitan. Warna nutella favoritku!"</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="glass-card p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.pinimg.com/564x/9e/9e/9e/9e9e9e9e9e9e9e9e9e9e9e9e9e9e9e.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Rina Amelia</h4>
+                            <div class="flex text-amber-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Kualitasnya premium banget. Setelah dicuci berkali-kali warnanya tetap bagus dan lipitannya tidak lepas. Worth it harganya!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-amber-700 to-amber-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Tunggu Apa Lagi?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Miliki hijab instan lipit Turki premium sekarang dan rasakan kenyamanannya setiap hari</p>
+            <a href="https://nora.orderonline.id/hijab-instan-lipit-turki" class="inline-block bg-white text-amber-800 px-8 py-3 rounded-full font-semibold hover:bg-amber-100 transition">Pesan Sekarang</a>
+            
+            <div class="mt-8 flex flex-wrap justify-center gap-6">
+                <div class="flex items-center">
+                    <i class="fas fa-truck text-2xl mr-3"></i>
+                    <span>Gratis Ongkir*</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-shield-alt text-2xl mr-3"></i>
+                    <span>Garansi 100%</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-credit-card text-2xl mr-3"></i>
+                    <span>Pembayaran Aman</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://api.whatsapp.com/send?phone=6281234567890&text=Halo%20Kirana.hijab,%20saya%20ingin%20bertanya%20tentang%20produk%20hijab%20instan%20lipit%20Turki" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Color Variant Selection
+        function changeColor(colorName, imageUrl) {
+            document.getElementById('main-product-image').src = imageUrl;
+            
+            // Update active state
+            const colorOptions = document.querySelectorAll('.color-option');
+            colorOptions.forEach(option => {
+                option.classList.remove('active');
+            });
+            event.currentTarget.classList.add('active');
+        }
+
+        // Image Slider
+        const sliderImages = [
+            "https://cdn.orderonline.id/uploads/images_7008741739274685938.png",
+            "https://down-id.img.susercontent.com/file/id-11134207-7rask-m2hjuhm1rp0j36@resize_w450_nl.webp",
+            "https://down-id.img.susercontent.com/file/id-11134207-7ras9-m2hyi3ok1xbt55@resize_w450_nl.webp",
+            "https://down-id.img.susercontent.com/file/id-11134207-7rbk5-m9g1z8go7lshf5@resize_w450_nl.webp"
+        ];
+        
+        let currentSlide = 0;
+        
+        function changeSlide(index) {
+            currentSlide = index;
+            const slideImage = document.getElementById('current-slide');
+            slideImage.classList.remove('slider-image');
+            void slideImage.offsetWidth; // Trigger reflow
+            slideImage.classList.add('slider-image');
+            slideImage.src = sliderImages[index];
+        }
+        
+        document.getElementById('next-slide').addEventListener('click', function() {
+            currentSlide = (currentSlide + 1) % sliderImages.length;
+            changeSlide(currentSlide);
+        });
+        
+        document.getElementById('prev-slide').addEventListener('click', function() {
+            currentSlide = (currentSlide - 1 + sliderImages.length) % sliderImages.length;
+            changeSlide(currentSlide);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
